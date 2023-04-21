@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="lib/jquery-3.6.4.min.js"></script>
+    
+<script>
+$(document).ready(function(){
+    var d = new Date();
+
+    var month = d.getMonth()+1;
+    var day = d.getDate();
+
+    var output = d.getFullYear() + '/' +
+    (month<10 ? '0' : '') + month + '/' +
+    (day<10 ? '0' : '') + day;
+
+    document.getElementById("date").innerHTML = output;
+
+});
+</script>
+</head>
+<body>
+<div style="display: flex;">
+    <p>Bonjour nous sommes le &nbsp;<p id="date"> </p></p>
+</div>
+
+</body>
+</html>

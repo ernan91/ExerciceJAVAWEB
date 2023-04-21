@@ -1,0 +1,24 @@
+<p>Vous devez trouver un nombre entre 1 et 1024</p>
+<input id="nbr-input" type="int">
+<button id="nbr-btntest">tester</button>
+<p id="response" ></p>
+<script>
+    nbr=Math.floor(Math.random() * 1024);
+    attemps=1
+    //console.log(nbr)
+   
+    document.getElementById("nbr-btntest").addEventListener('click',function(e){
+    inputnbr=document.getElementById('nbr-input').value
+    responsefield=document.getElementById('response')
+    //console.log(attemps)
+        if(inputnbr > nbr){
+            attemps=attemps+1
+            responsefield.innerHTML='le nombre a trouver est plus petit' 
+        }else if(inputnbr < nbr){
+            attemps=attemps+1
+            responsefield.innerHTML='le nombre a trouver est plus grand' 
+        }else if(inputnbr==nbr){
+            responsefield.innerHTML='vous avez réussie en ' +attemps+ ' coups';
+        }
+    })
+</script>

@@ -1,0 +1,17 @@
+/* Style pour le titre principal */
+h1 {
+    color: #336699;
+    font-size: 2.5em;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  /* Style pour les paragraphes */
+  p {
+    font-size: 1.2em;
+    line-height: 1.5em;
+    text-align: justify;
+    margin: 10px 0;
+  }
+  
